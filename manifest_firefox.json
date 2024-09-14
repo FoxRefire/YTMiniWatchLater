@@ -1,0 +1,19 @@
+{
+    "name": "YTMiniWatchLater",
+    "description": "Add Watch Later icon in Youtube mini side menu",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "js": ["YTMiniWatchLater.user.js"],
+          "matches": ["*://www.youtube.com/*"],
+          "all_frames": true
+        }
+    ],
+    "host_permissions": ["*://www.youtube.com/*"],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "YTMiniWatchLater@YTMiniWatchLater"
+        }
+    }
+}
